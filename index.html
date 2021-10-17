@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body class="body">
+    <div class="container1">
+    <h1 class="header1">This is Age Calculator</h1>
+
+      <div class="date">
+          <label for="Your_birthday" class="subtitle">Your birthday</label>
+            <input type="date" name="bdate" id="bdate"
+                    min="1900-01-01" max="2021-12-31" onclick="this.value = '' ">
+      </div>  
+
+    <div class="flexbox-container1">
+
+        <div>
+            <button class="btn btn-primary" onclick="getDate();" >Calculate</button>
+        </div>
+
+        <div>
+            <button class="btn btn-danger">Reset</button>
+         </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
