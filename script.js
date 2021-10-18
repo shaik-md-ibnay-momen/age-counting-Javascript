@@ -52,4 +52,18 @@ function calculation(){
     var totalDay= ((mYear*365)+ (mMonth*30)+ mDay);
     console.log(typeof totalDay);
     console.log(totalDay);
+    showResult(totalDay);
+}
+
+function showResult(num1)
+{
+    var mainResult= document.createElement('mainResult');
+    var answer= document.createTextNode('You are ' + num1 + 'days old.');
+    mainResult.setAttribute('id', 'mainResult');
+    mainResult.appendChild(answer);
+    document.getElementById('result').appendChild(mainResult);
+}
+
+function reset(){
+    document.getElementById('mainResult').remove();
 }
